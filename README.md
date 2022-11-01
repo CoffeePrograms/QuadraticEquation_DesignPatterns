@@ -3,23 +3,23 @@
   Стратегия, цепочка обязанностей, синглтон, фасад, интверсия управления и внедрение зависимостей.
   Проверка следования принципам ООП, СОЛИД
 --!>
-### Types of quadratic equations
+## Types of quadratic equations
 -
 -
 -
 
-### Patterns
+## Patterns
 -
 -
 -
 
-### Classes 
+## Classes 
 -
 -
 -
 -
 
-### Usage of patterns
+## Usage of patterns
 -
 -
 -
