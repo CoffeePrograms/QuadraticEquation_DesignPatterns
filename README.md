@@ -28,7 +28,8 @@
 ### Цепочка обязанностей
 Наследники **ACalcQe** работают с объектами наследников этого же класса: 
 - **CalcQeByD** считает корни с помощью **CalcRootsByD**; 
-- **CalcIqe** и **CalcQeByD** проверяют корни уравнений с помощью **CheckRootsByVieta** или **CheckRootsBySubstitution**.
+- **CalcIqe** проверяет корни уравнений с помощью **CheckRootsBySubstitution**.
+- **CalcQeByD** проверяет корни уравнений с помощью **CheckRootsBySubstitution** или **CheckRootsByVieta**.
 
 ### Одиночка
 **DefineType** содержит единственное поле: собственный экземпляр.
