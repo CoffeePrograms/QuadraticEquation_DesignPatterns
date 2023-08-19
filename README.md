@@ -1,4 +1,4 @@
-# Calculating the roots of quadratic equations
+# Design patterns in a mathematical problem
 Training of the principles of OOP, SOLID, design patterns on a mathematical project. The program calculates the roots of quadratic equations of different types.
 
 ## Mathematic
