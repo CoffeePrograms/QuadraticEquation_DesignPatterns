@@ -1,47 +1,46 @@
-# Вычисление корней квадратных уравнений 
-## Цель
-Тренировка принципов ООП, SOLID, паттернов проектирования на математическом проекте. Программа вычисляет корни квадратных уравнений разных типов. 
+# Calculating the roots of quadratic equations
+Training of the principles of OOP, SOLID, design patterns on a mathematical project. The program calculates the roots of quadratic equations of different types.
 
-## Математическая часть
-Программа решает следующие типы квадратных уравнений:
-- полные;
-- неполные;
-- биквадратные.
+## Mathematic
+The program solves the following types of quadratic equations:
+- complete;
+- incomplete;
+- biquadrate.
 
-## Шаблоны проектирования
-- стратегия;
-- цепочка обяазнностей;
+## Design patterns
+- strategy;
+- chain of responsibility;
 - одиночка;
-- фасад.
+- facade.
 
-## Паттерны
-### Стратегия 
-- **ITypeQe**    — интерфейс. Наследники определяют как вычисляются дискриминант или корни уравнения;
-- **ACalcRoots** — абстрактный класс. Наследники определяют как вычисляются корни через дискрминант;
-- **ACalcQe**    — абстрактный класс. Наследники определяют как вычисляются корни уравнения. 
+## Patterns
+### Strategy 
+- **ITypeQe**    — interface. The heirs determine how the discriminant or the roots of the equation are calculated;
+- **ACalcRoots** — abstract class. The heirs determine how the roots are calculated through the discriminant;
+- **ACalcQe**    — abstract class. The heirs determine how the roots of the equation are calculated. 
 
-### Цепочка обязанностей
-Наследники **ACalcQe** работают с объектами наследников этого же класса: 
-- **CalcQeByD** считает корни с помощью **CalcRootsByD**; 
-- **CalcIqe**   проверяет корни уравнений с помощью **CheckRootsBySubstitution**;
-- **CalcQeByD** проверяет корни уравнений с помощью **CheckRootsBySubstitution** или **CheckRootsByVieta**.
+### Chain of responsibility
+The heirs of **ACalcQe** work with objects of heirs of the same class:
+- **CalcQeByD** counts roots using **CalcRootsByD**; 
+- **CalcIqe**   checks the roots of equations using **CheckRootsBySubstitution**;
+- **CalcQeByD** checks the roots of equations using **CheckRootsBySubstitution** или **CheckRootsByVieta**.
 
-### Одиночка
-**DefineType** содержит единственное поле: собственный экземпляр.
+### Singletone
+**DefineType** defines the type of equation.
 
-### Фасад 
-- **DefineType** скрывает инициализацию объектов типа **ACalcQe**: определяет тип уравнения по заданным переменным и выбирает класс для расчета уравнения;
-- **CalcQeByD**  работает с объектами других классов для вычисления дискриминанта, корней уравнения и проверки решения;  
-- **CalcIqe**    работает с объектами других классов для вычисления корней уравнения и проверки решения.
+### Facade
+- **DefineType** hides initialization of objects of type **ACalcQe**: determines the type of equation by the specified variables and selects a class for calculating the equation;
+- **CalcQeByD**  works with objects of other classes to calculate the discriminant, the roots of the equation, and verify the solution;  
+- **CalcIqe**    works with objects of other classes to calculate the roots of the equation and verify the solution.
 
-## Пути улучшения программы 
-- Реализация ручного ввода;
-- Больше тестов, в частности, класса DefineType и типов уравнений;
-- Принцип открытости/закрытости в CalcRootsByD, CheckRootsBySubstitution при работе с биквадратным уравнением;
-- ✅ Принцип подстановки Лисков в наследниках ACalcQe. Проблема в IsRootsCorrect;
-- ✅ Проверка корней всех типов уравнений.
+## How to improve
+- Manual input;
+- More tests, in particular, of the DefineType class and equation types;
+- The principle of openness/closeness in CalcRootsByD, CheckRootsBySubstitution when working with a biquadrate equation;
+- ✅ The principle of substitution of Lisks in the heirs of ACalcQe (the problem is in IsRootsCorrect);
+- ✅ Checking the roots of all types of equations.
 
-## Источники математической теории:
+## Links:
 - https://izamorfix.ru/matematika/algebra/kvadratnye_uravn.html
 - https://izamorfix.ru/matematika/algebra/diskriminant.html
 - https://izamorfix.ru/matematika/algebra/nepolnye_kv_ur.html
