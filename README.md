@@ -23,7 +23,7 @@ The program solves the following types of quadratic equations:
 The heirs of **ACalcQe** work with objects of heirs of the same class:
 - **CalcQeByD** counts roots using **CalcRootsByD**; 
 - **CalcIqe**   checks the roots of equations using **CheckRootsBySubstitution**;
-- **CalcQeByD** checks the roots of equations using **CheckRootsBySubstitution** или **CheckRootsByVieta**.
+- **CalcQeByD** checks the roots of equations using **CheckRootsBySubstitution** or **CheckRootsByVieta**.
 
 ### Singletone
 **DefineType** defines the type of equation.
