@@ -10,7 +10,7 @@ The program solves the following types of quadratic equations:
 ## Design patterns
 - strategy;
 - chain of responsibility;
-- одиночка;
+- singleton;
 - facade.
 
 ## Patterns
