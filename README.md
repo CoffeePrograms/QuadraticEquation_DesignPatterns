@@ -15,9 +15,9 @@ The program solves the following types of quadratic equations:
 
 ## Patterns
 ### Strategy 
-- **ITypeQe**    — interface. The heirs determine how the discriminant or the roots of the equation are calculated;
-- **ACalcRoots** — abstract class. The heirs determine how the roots are calculated through the discriminant;
-- **ACalcQe**    — abstract class. The heirs determine how the roots of the equation are calculated. 
+- **ITypeQe**    — interface. Its subclasses determine how the discriminant or the roots of the equation are calculated;
+- **ACalcRoots** — abstract class. Its subclasses determine how the roots are calculated through the discriminant;
+- **ACalcQe**    — abstract class. Its subclasses determine how the roots of the equation are calculated. 
 
 ### Chain of responsibility
 The heirs of **ACalcQe** work with objects of heirs of the same class:
